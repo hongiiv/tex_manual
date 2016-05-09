@@ -1,0 +1,153 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional Formal Letter
+% LaTeX Template
+% Version 1.0 (28/12/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Brian Moses (http://www.ms.uky.edu/~math/Resources/Templates/LaTeX/)
+% with extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper]{letter} % Specify the font size (10pt, 11pt and 12pt) and paper size (letterpaper, a4paper, etc)
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{microtype} % Improves typography
+\usepackage{gfsdidot} % Use the GFS Didot font: http://www.tug.dk/FontCatalogue/gfsdidot/
+\usepackage[T1]{fontenc} % Required for accented characters
+\usepackage{kotex}
+\SetHangulFonts{bmj}{utgt}{uttz}
+% Create a new command for the horizontal rule in the document which allows thickness specification
+\makeatletter
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT MARGINS
+%----------------------------------------------------------------------------------------
+
+\textwidth 6.75in
+\textheight 9.25in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\topmargin -1in
+\longindentation 0.50\textwidth
+\parindent 0.4in
+
+%----------------------------------------------------------------------------------------
+%	SENDER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\def\Who{Gil-dong Hong} % Your name
+\def\What{, PhD} % Your title
+\def\Where{Department of Mathematics} % Your department/institution
+\def\Address{123 Broadway} % Your address
+\def\CityZip{Berkeley CA 12345} % Your city, zip code, country, etc
+\def\Email{E-mail: j.smith@berkeley.edu} % Your email address
+\def\TEL{Phone: (000) 111-1111} % Your phone number
+\def\URL{URL: http://www.johnsmith.com} % Your URL
+
+%----------------------------------------------------------------------------------------
+%	HEADER AND FROM ADDRESS STRUCTURE
+%----------------------------------------------------------------------------------------
+
+\address{
+\includegraphics[width=1in]{logo.png} % Include the logo of your institution
+\hspace{5.1in} % Position of the institution logo, increase to move left, decrease to move right
+\vskip -1.07in~\\ % Position of the text in relation to the institution logo, increase to move down, decrease to move up
+\Large\hspace{1.5in}Seoul \hfill ~\\[0.05in] % First line of institution name, adjust hspace if your logo is wide
+\hspace{1.5in}National University \hfill \normalsize % Second line of institution name, adjust hspace if your logo is wide
+\makebox[0ex][r]{\bf \Who \What }\hspace{0.08in} % Print your name and title with a little whitespace to the right
+~\\[-0.11in] % Reduce the whitespace above the horizontal rule
+\hspace{1.5in}\vhrulefill{1pt} \\ % Horizontal rule, adjust hspace if your logo is wide and \vhrulefill for the thickness of the rule
+\hspace{\fill}\parbox[t]{2.85in}{ % Create a box for your details underneath the horizontal rule on the right
+\footnotesize % Use a smaller font size for the details
+\Who \\ \em % Your name, all text after this will be italicized
+\Where\\ % Your department
+\Address\\ % Your address
+\CityZip\\ % Your city and zip code
+\TEL\\ % Your phone number
+\Email\\ % Your email address
+\URL % Your URL
+}
+\hspace{-1.4in} % Horizontal position of this block, increase to move left, decrease to move right
+\vspace{-1in} % Move the letter content up for a more compact look
+}
+
+%----------------------------------------------------------------------------------------
+%	TO ADDRESS STRUCTURE
+%----------------------------------------------------------------------------------------
+
+\def\opening#1{\thispagestyle{empty}
+{\centering\fromaddress \vspace{0.6in} \\ % Print the header and from address here, add whitespace to move date down
+\hspace*{\longindentation}\today\hspace*{\fill}\par} % Print today's date, remove \today to not display it
+{\raggedright \toname \\ \toaddress \par} % Print the to name and address
+\vspace{0.4in} % White space after the to address
+\noindent #1 % Print the opening line
+% Uncomment the 4 lines below to print a footnote with custom text
+%\def\thefootnote{}
+%\def\footnoterule{\hrule}
+%\footnotetext{\hspace*{\fill}{\footnotesize\em Footnote text}}
+%\def\thefootnote{\arabic{footnote}}
+}
+
+%----------------------------------------------------------------------------------------
+%	SIGNATURE STRUCTURE
+%----------------------------------------------------------------------------------------
+
+\signature{\Who \What} % The signature is a combination of your name and title
+
+\long\def\closing#1{
+\vspace{0.1in} % Some whitespace after the letter content and before the signature
+\noindent % Stop paragraph indentation
+\hspace*{\longindentation} % Move the signature right
+\parbox{\indentedwidth}{\raggedright
+#1 % Print the signature text
+\vskip 0.65in % Whitespace between the signature text and your name
+\fromsig}} % Print your name and title
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+%----------------------------------------------------------------------------------------
+%	TO ADDRESS
+%----------------------------------------------------------------------------------------
+
+\begin{letter}
+{Prof. Jones\\
+Mathematics Search Committee\\
+Department of Mathematics\\
+University of California\\
+Berkeley, California 12345\\
+}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\opening{Dear Sir or Madam,}
+
+2007년 세상에 첫선을 보인 아이폰이 약 9년 만에 10억대 판매를 달성할 수 있을 것이라는 분석이 나왔다. 시장조사기관인 팩트셋이 애널리스트를 상대로 설문조사를 벌인 결과 올해 2분기 말까지 애플의 아이폰 누적 판매량이 총 9억9천만대를 기록하고 여름께 10억대 판매를 달성할 전망이라고 CNN머니가 4일(현지시간) 보도했다.지난해 말까지 집계된 아이폰 판매량은 8억9천600만대다.
+
+여기에 올 1분기 아이폰 판매량은 5천만대, 2분기에는 4천400만대를 보일 것으로 예상돼 올여름이면 판매량이 10억대를 돌파할 가능성이 크다.애널리스트들은 7월 20일에 10억대 판매가 이뤄질 것으로 내다봤다. 최근에 아이폰 열풍이 상대적으로 주춤했다는 평가가 나오지만, 여전히 해외에서 아이폰 판매가 호조를 보이고 있다. 만약 애플이 새로 내놓은 아이폰 SE의 판매가 이번 봄에 강세를 보인다면 10억대 돌파 시기가 앞당겨질 수 있다는 전망도 나온다.
+
+아이폰은 단일 기술 제품 가운데 가장 잘 팔린 '베스트셀러'로 꼽힌다. 2007년 6월 29일 처음 출시된 이래 전 세계에서 사랑받으면서 애플의 대표 제품으로 자리매김했다. 지난해 한 해 동안 아이폰 매출은 1억5천500만 달러에 달하며, 1993년부터 지금까지 팔린 맥과 아이패드, 아이팟 판매량을 모두 합쳐도 아이폰 판매량에는 미치지 못한다.
+
+\closing{Sincerely,}
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+\end{document}

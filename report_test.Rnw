@@ -1,0 +1,275 @@
+\documentclass[9pt,a4paper]{article}
+
+%\usepackage[scaled=0.92]{helvet} 
+%\usepackage{layout}
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{a4wide}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage[absolute]{textpos}
+\usepackage{tabularx} 
+\usepackage{tabulary}                 
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+\usepackage{lastpage}
+\usepackage{longtable}
+\usepackage{textpos}
+\usepackage{layout}
+\usepackage{xcolor}
+\usepackage{lipsum} % just for dummy text- not needed for a longtable
+\usepackage{enumitem}
+
+\pagestyle{fancy}
+\voffset=0cm
+\hoffset=-1.3cm
+\headheight=1cm
+
+\textheight=22cm
+\textwidth=17cm
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{\tiny$\bullet$}
+\renewcommand{\familydefault}{\sfdefault} % sans font as a default
+%\renewcommand{\familydefault}{\rmdefault} % serif(roman) font as a default
+%\renewcommand{\familydefault}{\ttdefault}
+
+
+
+
+\usepackage{titlesec} 
+\definecolor{invitae}{RGB}{0,47,128}
+
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PLEASE FILL THE ADEQUATE DATA IN THE TABLE REPLACING
+% THE VALUES EXEMPLIFIED
+
+
+\fancyfoot[L]{
+\scriptsize ngenebio. 220, Seoul National Univ.,1, Gwanak-ro, Gwanak-gu, Seoul, Korea \\
+p: +82-2-883-9787 e: clinical@ngenebio.com \\
+www.ngenebio.com
+}
+\fancyfoot[C]{\scriptsize }
+\fancyfoot[R]{ \scriptsize \thepage \hspace{1pt} of \pageref{LastPage}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DO NOT CHANGE THIS BLOCK
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+
+
+%\layout
+
+\rhead{\begin{textblock*}{19cm}(2.5cm,1cm)\includegraphics[width=5cm]{bs_1_15_a.jpg}\end{textblock*}}
+\lhead{\begin{textblock*}{19cm}(3.2cm,2cm)\scriptsize Breast Cancer Patient Test Report\end{textblock*}}
+
+\setlength{\parindent}{0cm}
+
+{\huge \textbf{Breast Cancer Patient Test Report}} \\ \\
+
+%subject information
+%site information
+%specimen information
+
+{\large \textbf{SUBJECT INFORMATION}} \\ \\
+Pre-Screening Subject No.: \underline{\hspace{ 4cm}} \\ \\
+Subject Initials (first/middle/last): \underline{\hspace{ 4cm}}\\ \\
+Date of Birth (dd/mmm/yyyy): \underline{\hspace{ 4cm}} \\ \\
+Gender: $\square$ Male $\square$ Female
+
+\par\null
+
+{\large \textbf{SPECIMEN INFORMATION}} \\ \\
+Accession No.:\underline{\hspace{ 2.5cm}} \hspace{ 0.5cm}Date Specimen Received: \underline{\hspace{ 2.5cm}}\hspace{ 0.5cm} Date Reported: \underline{\hspace{ 2.5cm}}
+
+\par\null\par
+
+\begin{center}
+\begin{longtable}{p{17cm}}
+\rowcolor{gray!30}  \\ \rowcolor{gray!30} \textbf{Summary} \\[10pt] 
+\rowcolor{gray!30} \Large{\textbf{Positive result. Pathogenic variant identified in BRCA1.}} \par
+\end{longtable}
+\end{center}
+
+\section*{{\color{invitae}Clinical Summary \leaders\vrule height 2.5pt depth -1.5pt \hfill \null}}
+
+
+\begin{itemize}[leftmargin=0.4cm]
+	\item A Pathogenic variant, c.4327C>T (p.Arg1443*), was identified in BRCA1. 
+	\begin{itemize}
+	  \item The BRCA1 gene is associated with autosomal dominant hereditary breast and ovarian cancer (HBOC) syndrome (MedGen UID: 151793)
+	  \item This Pathogenic variant is consistent with a with a diagnosis of HBOC. These results should be interpreted within the context of addtional laboratory results, family history and clinical findings.
+	  \item HBOC syndrome is characterized by an increased lifetime risk for breast cancer, contaralateral brest cancer, male breast cancer, ovarian cancer, prostate cancer, pancreatic cancer, and other cancers (PMID:12237281). The lifetime risk for female breast cancer in individuals with a pathogenic BRCA1 sequence change is 40-87\% (PMID: 10498392, 7907678). The risk for contralateral breast cancer in these individuals is up to 43\% within ten years of the initial breast cancer diagnosis (PMID: 15197194). The lifetime risk for mail breast cancer in individuals with a pathogeic BRCA1 sequence change is 1.2\% (PMID: 18042939). The lifetime risk for ovarian, fallopian tube, or peritoneal cancer in females is 16-44\% (PMID: 7907678, 9145676). Clinical management guidelines for HBOC syndrome can be found at www.nccn.org.
+	  \item Close relatives (children, siblings, and each parent) have up to a 50\% chance of being a carrier of this Pathogenic variant. More distant relatives may also be carriers. Site-specific testing for this variant is available.
+	\end{itemize}
+	\item Genetic counseling is recommended to discuss the implications of this result, For a listing of genetic counselors, please visit www.nsgc.org.
+\end{itemize}
+
+%\section*{Variant research\hspace{0.3cm}\line(1,0){300}}
+\section*{{\color{invitae}Complete Results \leaders\vrule height 2.5pt depth -1.5pt \hfill \null}}
+
+%\begin{table}[h] 
+%\centering
+
+\begin{center}
+\begin{longtable}{|l|l|l|l|l|l|l|}
+
+\caption{Complete Test Results (Style I)} \label{tab:long} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{Gene}} & \multicolumn{1}{c|}{\textbf{Exon}} & \multicolumn{1}{c|}{\textbf{Nucleotide Change}} & \multicolumn{1}{c|}{\textbf{Amno acid Change}} & \multicolumn{1}{c|}{\textbf{Zygosity}} & \multicolumn{1}{c|}{\textbf{Mutation Type}} & \multicolumn{1}{c|}{\textbf{Mutation Effect}}\\ \hline 
+\endfirsthead
+
+\multicolumn{7}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Gene}} & \multicolumn{1}{c|}{\textbf{Exon}} & \multicolumn{1}{c|}{\textbf{Nucleotide Change}} & \multicolumn{1}{c|}{\textbf{Amno acid Change}} & \multicolumn{1}{c|}{\textbf{Zygosity}} & \multicolumn{1}{c|}{\textbf{Mutation Type}} & \multicolumn{1}{c|}{\textbf{Mutation Effect}}\\ \hline 
+\endhead
+
+\hline \multicolumn{7}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+BRCA1 & 11 & 2345delG & Ser782fs & Hetero & FS & NR\\
+BRCA2 & 10 & 865A>C & Asn289His & Hetero & MS & P\\
+BRCA2 & 11 & 2229T>C & His743His & Hetero & Syn & P \\
+
+\hline 
+\multicolumn{7}{|l|}{{FS=Frameshift Mutation, NS=Nonsense Mutation, MS=Missense Mutation}} \\ 
+\multicolumn{7}{|l|}{{P=Polymorphism, S=Splice, IFI=In Frame Insertion, IFD=In Frame Deletion}}\\ 
+\multicolumn{7}{|l|}{{IVS=Intervenning Sequence, UV=Unclassified variant, Syn=Synonymous and NR=Not Reported}}\\ 
+
+
+
+\end{longtable}
+\end{center}
+
+
+
+\begin{center}
+\begin{longtable}{|l|l|l|l|l|}
+
+\caption{Complete Test Results (Style II)} \label{tab:long} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{Gene}} & \multicolumn{1}{c|}{\textbf{Condition Group}} & \multicolumn{1}{c|}{\textbf{Variant}} & \multicolumn{1}{c|}{\textbf{Zygosity}} & \multicolumn{1}{c|}{\textbf{Variant Classification}}\\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Gene}} & \multicolumn{1}{c|}{\textbf{Condition Group}} & \multicolumn{1}{c|}{\textbf{Variant}} & \multicolumn{1}{c|}{\textbf{Zygosity}} & \multicolumn{1}{c|}{\textbf{Variant Classification}}\\ \hline 
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+BRCA1  & Hereditary Cancers (Breast) & c.4327C>T (p.Arg1443*) & heterozygous & PATHOGENIC\\
+BRCA1  & Hereditary Cancers (Breast) & c.4327C>T (p.Arg1443*) & heterozygous & PATHOGENIC\\
+BRCA1  & Hereditary Cancers (Breast) & c.4327C>T (p.Arg1443*) & heterozygous & PATHOGENIC\\
+BRCA1  & Hereditary Cancers (Breast) & c.4327C>T (p.Arg1443*) & heterozygous & PATHOGENIC\\
+
+\hline \multicolumn{5}{|c|}{{The folowing genes were evaluated for sequence changes and exonic deletions/duplications: BRCA1, BRCA2}} \\ \multicolumn{5}{|c|}{{Results are negative unless otherwise indicated}}
+
+\end{longtable}
+\end{center}
+
+
+
+%\par\null\par
+
+%\section*{Variant classification\hspace{0.3cm}\line(1,0){300}}
+\section*{{\color{invitae}Variant classification \leaders\vrule height 2.5pt depth -1.5pt \hfill \null}}
+
+After the sequence change has been thoroughly researched and the relevant information has been gathered, a formal variant classification is assigned to the sequence change. \\ \\
+A formal classification is meant to help answer two questions about the clinical significance of the sequence change. \\
+\begin{itemize}[leftmargin=0.4cm]
+ \item From a diagnostic perspective: Does this sequence change, in the correct genetic background, provide an explanation for disease
+in an affected individual? 
+ \item From a predictive perspective, narrowly applied to highly penetrant conditions: Is an individual who inherits this sequence
+change likely to develop disease?
+\end{itemize}	
+
+The ACMG has recommended a five-tier classification system According to this system, a sequence change can be classified as:
+
+\begin{itemize}[leftmargin=0.4cm]
+	\item \textbf{Pathogenic}: This sequence change directly contributes to the development of disease. Some pathogenic sequence changes may not be fully penetrant. In the case of recessive or X-linked conditions, a single pathogenic sequence change may not be sufficient to cause disease on its own. Additional evidence is not expected to alter the classification of this sequence change.
+	\item \textbf{Likely pathogenic}: This sequence change is very likely to contribute to the development of disease; however, the scientific evidence is currently insufficient to prove this conclusively. Additional evidence is expected to confirm this assertion of pathogenicity, but
+we cannot fully rule out the possibility that new evidence may demonstrate that this sequence change has little or no clinical
+significance
+	\item \textbf{Uncertain significance}: There is not enough information at this time to support a more definitive classification of this sequence change.
+	\item \textbf{Likely benign}: This sequence change is not expected to have a major effect on disease; however, the scientific evidence is currently insufficient to prove this conclusively. Additional evidence is expected to confirm this assertion, but we cannot fully rule out the
+possibility that new evidence may demonstrate that this sequence change can contribute to disease.
+	\item \textbf{Benign}: This sequence change does not cause disease. 
+\end{itemize}	
+
+\section*{{\color{invitae}Databases reviewed \leaders\vrule height 2.5pt depth -1.5pt \hfill \null}}
+ 
+\begin{itemize}[leftmargin=0.4cm]
+ \item \textbf{Population databases: }
+ \begin{itemize}
+  \item 1000 Genomes (http://browser.1000genomes.org)
+  \item NHLBI GO Exome Sequencing Project (ESP) (http://evs.gs.washington.edu/EVS)
+  \item dbSNP (http://www.ncbi.nlm.nih.gov/snp)
+  \item dbVar (http://www.ncbi.nlm.nih.gov/dbvar)
+ \end{itemize}
+ \item \textbf{Disease databases: }
+ \begin{itemize}
+  \item ClinVar (http://www.ncbi.nlm.nih.gov/clinvar)
+  \item ClinVitae (http://clinvitae.invitae.com)
+  \item Online Mendelian Inheritance in Man (OMIM) (http://www.omim.org)
+  \item Human Gene Mutation Database (HGMD) (http://www.hgmd.org)
+  \item Human Genome Variation Society (HGVS) (http://www.hgvs.org)
+  \item Leiden Open Variation Database (LOVD) (http://www.lovd.nl)
+  \item DECIPHER (http://decipher.sanger.ac.uk)
+ \end{itemize}
+ \item \textbf{Sequence databases: }
+ \begin{itemize}
+  \item NCBI genome (http://www.ncbi.nlm.nih.gov/genome)
+  \item RefSeq Gene (http://www.ncbi.nlm.nih.gov/refseq/rsg
+  \item Locus Reference Genomic (LRG) (http://www.lrg-sequence.org)
+  \item MitoMap (http://www.mitomap.org/MITOMAP/HumanMitoSeq)
+ \end{itemize}
+\end{itemize}
+
+\section*{{\color{invitae}Reporting \leaders\vrule height 2.5pt depth -1.5pt \hfill \null}}
+Our clinical report documents the evidence and logic supporting each variant interpretation to enable the ordering clinician to evaluate and, if appropriate, discuss the evidence with their patients. All language used to describe genetic variants and variant interpretation is systematic and consistent with ACMG and Human Genome Variation Society (HGVS) recommendations. \\
+ 
+This report includes:
+\begin{itemize}[leftmargin=0.4cm]
+  \item \textbf{Summary}: A clear statement summarizing the high-level result of the genetic test — positive, negative, or clinically inconclusive
+  \item \textbf{Clinical summary}: a description of the relevance of the genetic results to the patient based on their clinical and family history
+  \item \textbf{Complete results table}: A table of the genes in which genetic variants were identified, and a complete list of all genes analyzed in the test
+  \item \textbf{Variant details}: a summary of the evidence and logic used to justify the interpretation of the sequence change
+\end{itemize}
+
+\par\null\par
+
+%{\color{invitae}\noindent\rule{17cm}{0.4pt}}
+%\begin{flushright}
+%\large 
+%\textbf{
+%p: +82-2-883-9787 \\
+%NGeneBio. 220, Seoul National Univ.,1, Gwanak-ro, Gwanak-gu, \\ Seoul, Korea \\
+%clinical@ngenebio.com  www.ngenebio.com\\}
+%\end{flushright}
+
+%\scriptsize{Benign variants, and silent and intronic variants with no evidence towards pathogenicity, are not included in this report but are available upon request.} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% YOUR TEXT ENDS HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\end{document}                             % The required last line
